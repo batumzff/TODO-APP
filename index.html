@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Happy <span class="day"></span></h2>
+
+      <h3>
+        TO-DO LİST
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1.2em"
+          viewBox="0 0 576 512"
+        >
+         
+          <style>
+            svg {
+              fill: #de1717;
+            }
+          </style>
+          <path
+            d="M0 96C0 60.7 28.7 32 64 32H512c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM128 288a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm32-128a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM128 384a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H448c13.3 0 24-10.7 24-24s-10.7-24-24-24H224z"
+          />
+        </svg>
+      </h3>
+
+      <div class="container-2">
+        <input id="input" type="text" placeholder="Add your task" />
+
+        <button id="add">ADD</button>
+      </div>
+
+      <ul>
+        <!-- <li>
+        <p class="circle"></p>
+        <span class="task">CSS</span>
+        <button class="sil" id="delete" type=''>x</button>
+    </li> -->
+      </ul>
+
+      <p class="result"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

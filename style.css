@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(171, 192, 51);
+    background-image: linear-gradient(90deg, #c98621 15%, #100000 100%);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+}
+
+.container{
+
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 90%;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: space-between;
+
+  
+  
+}
+
+h2{
+    margin: auto;
+    font-family: sans-serif;
+}
+
+
+h3{
+
+    color: rgb(77, 35, 247);
+}
+
+.container-2{
+
+    background-color: rgb(231, 229, 229);
+    border-radius: 40px;
+    height: 85%;
+}
+
+#input{
+border: none;
+background-color:inherit;
+padding: .7rem 1.3rem;
+border-radius: 40px;
+outline: none;
+caret-color:coral
+
+}
+
+#add{
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: .7rem 1.3rem;
+    width: 90px;
+    color: white;
+    background-color: rgba(0, 255, 38, 0.492);
+    cursor: pointer;
+    font-weight: bold;
+    
+
+
+}
+
+/* ! todolar oluştuktan sonra elementlere verilecek stylar  */
+
+.circle{
+
+    border: 1px solid red;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1rem;
+
+}
+
+
+.li{
+
+    list-style: none;
+    background-origin: padding-box;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    position:relative ;
+    padding: .7rem 0rem;
+
+}
+
+
+.task{
+ cursor: pointer;
+}
+
+
+.sil{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: red;
+    font-size: 1.3rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+
+.result-task {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: completedText 1s linear alternate;
+    background-color: rgb(182, 39, 14);
+  }
+  
+  @keyframes completedText {
+    0% {
+      transform: rotateX(180deg);
+    }
+  
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+
+
+/* ! todo elemanı check ediltikten sonraki eklenecek  style özellikleri */
+
+.pchecked:first-child {
+    background-color: #ff7a48;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  
+  .span-checked {
+    text-decoration: line-through;
+    color: rgb(109, 107, 107);
+  }
+
+
+
+  /* !responsive */
+
+
+  @media screen and (max-width:430px){
+
+    .container{
+      margin: 3rem;
+      width: 310px;
+      height: 85%;
+      overflow: scroll;
+  }
+
+  .container-2{
+
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   
+}
+
+
+#input{
+  border: none;
+  padding: .7rem .4rem;
+  
+  }
+  
+  #add{
+    
+      padding: .3rem 1.3rem;
+      width: 70px;
+  }
+
+  }
+
+  @media screen and (max-width:380px){
+
+    .container{
+      width: 250px;
+      margin-top: 4rem;
+      overflow: scroll;
+      height: 80%;
+      padding: 1.3rem;
+  }
+
+
+  #input{
+    border: none;
+     width: 145px;
+    
+    }
+    
+  }
+
+  @media screen and (max-width:340px){
+
+ 
+.container-2{
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+  #input{
+
+     width: 50%;
+    
+    
+    }
+
+    #add{
+
+      width: 50px;
+    padding-right: .2rem;
+     
+    }
+
+  }
