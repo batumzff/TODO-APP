@@ -1,4 +1,7 @@
 ## About the Project
+<div align="center">
+  <img src="todo-app.gif" />
+</div>
 
 A simple To-Do List web application where you can add tasks, mark them as completed, and delete them.
 
